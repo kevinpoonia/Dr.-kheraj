@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Dr. Kheraj!</title>
+    <!-- Google Fonts for Elegant yet readable text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Serif+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Native Audio Element -->
+    <audio id="bg-audio" src="guru_main_sansar.mp3" loop preload="auto"></audio>
+
+    <!-- Confetti Canvas Background -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Entrance Screen (Required for Audio) -->
+    <div id="entrance-screen" class="entrance-screen">
+        <div class="entrance-content">
+            <!-- CSS Cake & Candle -->
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <h1 class="celebratory-title">A Special Celebration</h1>
+            <p class="subtitle">For Dr. Kheraj Sir</p>
+            <button id="start-btn" class="start-btn">Open the Envelope ✨</button>
+            <p class="audio-hint">Turn up your volume for the full experience</p>
+        </div>
+    </div>
+
+    <!-- Main Celebratory Feed -->
+    <main id="main-feed" class="main-feed hidden">
+        
+        <header class="main-header">
+            <h1 class="happy-birthday-text">Happy Birthday!</h1>
+            <h2 class="dr-name">Dr. Kheraj Sir</h2>
+        </header>
+
+        <section class="gallery-section">
+            
+        <section class="gallery-section">
+            
+            <!-- Photo 1 -->
+            <div class="polaroid tilt-left hidden-scroll">
+                <div class="photo">
+                    <img src="IMG-20260313-WA0005.jpg" alt="Photo of Dr. Kheraj">
+                </div>
+                <div class="caption">A True Guide</div>
+            </div>
+
+            <!-- Interleaved Quote 1 (English Geo) -->
+            <div class="inline-quote hidden-scroll delay-1">
+                <p class="english-quote">"A great teacher is like a Prime Meridian, connecting students to a world of endless possibilities."</p>
+                <div class="quote-ornament">✦</div>
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="polaroid tilt-right hidden-scroll delay-2">
+                <div class="photo">
+                    <img src="IMG-20260313-WA0006.jpg" alt="Photo of Dr. Kheraj">
+                </div>
+                <div class="caption">Inspiring Many</div>
+            </div>
+            
+            <!-- Interleaved Quote 2 (Hindi Geo) -->
+            <div class="inline-quote hidden-scroll delay-1">
+                <p class="hindi-quote">जीवन के नक्शे में अनगिनत रास्ते हैं, पर सही दिशा और अक्षांश केवल एक गुरु ही दिखाता है।</p>
+                <div class="quote-ornament">✦</div>
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="polaroid tilt-left hidden-scroll delay-2">
+                <div class="photo">
+                    <img src="IMG-20260313-WA0007.jpg" alt="Photo of Dr. Kheraj">
+                </div>
+                <div class="caption">Leading the Way</div>
+            </div>
+
+            <!-- Interleaved Quote 3 (English Geo) -->
+            <div class="inline-quote hidden-scroll delay-1">
+                <p class="english-quote">"Just as a compass always finds true north, your guidance always leads us to the right path."</p>
+            </div>
+
+        </section>
+
+        <section class="message-section hidden-scroll delay-2">
+            <div class="message-card">
+                <div class="wishes">
+                    <p class="wish-text">Wishing you a year filled with joy, health, and success!</p>
+                    <p class="signature">— From Nikki</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
